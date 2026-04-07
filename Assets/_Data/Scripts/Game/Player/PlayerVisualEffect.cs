@@ -9,6 +9,10 @@ public class PlayerVisualEffect : MyBehaviour
     [Header("Animation")]
     [SerializeField]
     private Animator _animator;
+
+    private const string ANIM_MOVE_X = "MoveX";
+    private const string ANIM_MOVE_Y = "MoveY";
+    private const string ANIM_SPEED = "Speed";
     #endregion
 
     #region Func
@@ -35,6 +39,14 @@ public class PlayerVisualEffect : MyBehaviour
 
         if (!_vfxMoveEffect.isPlaying)
             _vfxMoveEffect.Play();
+
+    }
+
+    public void UpdateAnim(Vector2 dir, float speed)
+    {
+        _animator.SetFloat(ANIM_MOVE_X, dir.x);
+        _animator.SetFloat(ANIM_MOVE_Y, dir.y);
+        _animator.SetFloat(ANIM_SPEED, speed);
     }
     #endregion
 }

@@ -47,5 +47,6 @@ public class PlayerMovement : MyBehaviour
         // Di chuyển
         _rb2D.velocity = _moveInput * _moveData.MoveSpeed;
         _playerVisualEffect.UpdateVisual(_moveInput);
+        _playerVisualEffect.UpdateAnim(_moveInput, _rb2D.velocity.magnitude);
     }
 }

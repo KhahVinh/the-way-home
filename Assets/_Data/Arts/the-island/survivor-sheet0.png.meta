@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -121,7 +121,196 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: survivor-sheet0_0
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 930
+        width: 18
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5aae6c6b1f66a14994b437c7ecf7fc1
+      internalID: -181300409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: survivor-sheet0_15
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 801
+        width: 18
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa67123d64fc8f4ea32810393907460
+      internalID: -1447901487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: survivor-sheet0_31
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 676
+        width: 18
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88bb268b46e94744a8ef6da03666f733
+      internalID: -780262515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: survivor-sheet0_43
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 546
+        width: 18
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 734e0e009bafa8145a803ad5c9994221
+      internalID: -1621805164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: survivor-sheet0_58
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 417
+        width: 18
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f382e0cba7a8bc48b484f8865cabf47
+      internalID: -929212889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: survivor-sheet0_69
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 289
+        width: 18
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ff881ec95a80b6468d09b12b09afc31
+      internalID: -34170380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: survivor-sheet0_77
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 197
+        width: 18
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1641fb91496d8cd47a722355d46f240b
+      internalID: -131947737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: survivor-sheet0_85
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 115
+        width: 18
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 209fdbd779c2e9648856cbb4105e8c3d
+      internalID: -860015846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: survivor-sheet0_93
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 33
+        width: 18
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f579589fc25ac7948a1beddee2ccbc05
+      internalID: 625040521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +321,108 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      survivor-sheet0_0: -181300409
+      survivor-sheet0_1: 358083918
+      survivor-sheet0_10: 1439153059
+      survivor-sheet0_100: -692855085
+      survivor-sheet0_11: -57201903
+      survivor-sheet0_12: -1288965105
+      survivor-sheet0_13: 961391184
+      survivor-sheet0_14: -1931849212
+      survivor-sheet0_15: -1447901487
+      survivor-sheet0_16: 1543210914
+      survivor-sheet0_17: 1010801055
+      survivor-sheet0_18: 623140573
+      survivor-sheet0_19: -2016139577
+      survivor-sheet0_2: -1972730629
+      survivor-sheet0_20: 124500675
+      survivor-sheet0_21: 1977190584
+      survivor-sheet0_22: 1637616275
+      survivor-sheet0_23: -625575491
+      survivor-sheet0_24: -49699968
+      survivor-sheet0_25: -387089348
+      survivor-sheet0_26: -1896598873
+      survivor-sheet0_27: -203493876
+      survivor-sheet0_28: 1933886955
+      survivor-sheet0_29: -2043537362
+      survivor-sheet0_3: 476481617
+      survivor-sheet0_30: -690402998
+      survivor-sheet0_31: -780262515
+      survivor-sheet0_32: -190572710
+      survivor-sheet0_33: -907063714
+      survivor-sheet0_34: 1125916982
+      survivor-sheet0_35: -627538239
+      survivor-sheet0_36: -1127384739
+      survivor-sheet0_37: 1886787203
+      survivor-sheet0_38: 2136595831
+      survivor-sheet0_39: 758728382
+      survivor-sheet0_4: -1257348573
+      survivor-sheet0_40: 1430206749
+      survivor-sheet0_41: 266010467
+      survivor-sheet0_42: -283379940
+      survivor-sheet0_43: -1621805164
+      survivor-sheet0_44: 216186283
+      survivor-sheet0_45: 1167654368
+      survivor-sheet0_46: 1090888022
+      survivor-sheet0_47: 1543662855
+      survivor-sheet0_48: 1537540880
+      survivor-sheet0_49: -51241847
+      survivor-sheet0_5: -1152823263
+      survivor-sheet0_50: -1405221509
+      survivor-sheet0_51: -1444103893
+      survivor-sheet0_52: -1482409051
+      survivor-sheet0_53: -207443099
+      survivor-sheet0_54: -2110059090
+      survivor-sheet0_55: -787919505
+      survivor-sheet0_56: 1567632748
+      survivor-sheet0_57: 701777413
+      survivor-sheet0_58: -929212889
+      survivor-sheet0_59: 271030659
+      survivor-sheet0_6: 1297964116
+      survivor-sheet0_60: -1813963195
+      survivor-sheet0_61: 634000548
+      survivor-sheet0_62: -610925654
+      survivor-sheet0_63: -1443987404
+      survivor-sheet0_64: 1239760515
+      survivor-sheet0_65: -727228609
+      survivor-sheet0_66: 187823667
+      survivor-sheet0_67: 425959932
+      survivor-sheet0_68: 1879408374
+      survivor-sheet0_69: -34170380
+      survivor-sheet0_7: 76704264
+      survivor-sheet0_70: 2075177051
+      survivor-sheet0_71: -2064208648
+      survivor-sheet0_72: 317127693
+      survivor-sheet0_73: -562968643
+      survivor-sheet0_74: -887152537
+      survivor-sheet0_75: -1189623846
+      survivor-sheet0_76: 850284469
+      survivor-sheet0_77: -131947737
+      survivor-sheet0_78: 1159186818
+      survivor-sheet0_79: -173056149
+      survivor-sheet0_8: -761994381
+      survivor-sheet0_80: -373655283
+      survivor-sheet0_81: 1889476978
+      survivor-sheet0_82: -627790397
+      survivor-sheet0_83: -1296296038
+      survivor-sheet0_84: -161309197
+      survivor-sheet0_85: -860015846
+      survivor-sheet0_86: -497550274
+      survivor-sheet0_87: 1469488616
+      survivor-sheet0_88: -2100977153
+      survivor-sheet0_89: -1863682456
+      survivor-sheet0_9: -2086355609
+      survivor-sheet0_90: 1400486049
+      survivor-sheet0_91: -1215091670
+      survivor-sheet0_92: -1615189532
+      survivor-sheet0_93: 625040521
+      survivor-sheet0_94: 381365771
+      survivor-sheet0_95: -43393606
+      survivor-sheet0_96: 2051918226
+      survivor-sheet0_97: -1253971992
+      survivor-sheet0_98: 1807818901
+      survivor-sheet0_99: 1240761542
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

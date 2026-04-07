@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -121,7 +121,385 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: palm-sheet0_0
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 424
+        width: 39
+        height: 50
+      alignment: 9
+      pivot: {x: 0.7503177, y: 0.11514649}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 630b2d186a045fa4f8b2d98758e55e3e
+      internalID: 1103562830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palm-sheet0_1
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 424
+        width: 38
+        height: 50
+      alignment: 9
+      pivot: {x: 0.816191, y: 0.10012756}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374ca56fe502d454a8b06370323d5552
+      internalID: 146966480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palm-sheet0_2
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 424
+        width: 38
+        height: 50
+      alignment: 9
+      pivot: {x: 0.8049413, y: 0.10955688}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d31a8113c223e9f4cae3630edeea641d
+      internalID: 552189204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palm-sheet0_3
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 342
+        width: 40
+        height: 50
+      alignment: 9
+      pivot: {x: 0.6877384, y: 0.10513367}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6201bb84da8a4846ba04dc18387b3f6
+      internalID: 1797922078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palm-sheet0_4
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 346
+        width: 15
+        height: 12
+      alignment: 9
+      pivot: {x: 0.49999797, y: 0.2577184}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce900bd985adb96468d3b58bff5877d9
+      internalID: -2096385707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palm-sheet0_5
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 342
+        width: 38
+        height: 50
+      alignment: 9
+      pivot: {x: 0.7993967, y: 0.10955688}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c636bdf25e9d11488c91e87333008c1
+      internalID: -1420255786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palm-sheet0_6
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 260
+        width: 38
+        height: 50
+      alignment: 9
+      pivot: {x: 0.7700794, y: 0.11514649}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57e2a1e3376cdd04482149886a0b3847
+      internalID: -228234336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palm-sheet0_7
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 261
+        width: 51
+        height: 18
+      alignment: 9
+      pivot: {x: 0.8484814, y: 0.29203796}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdb87a648bdc04a428159f9c9ed7990b
+      internalID: 1211558368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palm-sheet0_8
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 260
+        width: 38
+        height: 50
+      alignment: 9
+      pivot: {x: 0.7993967, y: 0.11377075}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd5e805da445d884cbbfd3f44ca07fa6
+      internalID: -237907743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palm-sheet0_9
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 178
+        width: 39
+        height: 50
+      alignment: 9
+      pivot: {x: 0.7246442, y: 0.12015289}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd36de7bc1b1a614fb05966d266c5546
+      internalID: 1958245870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palm-sheet0_10
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 182
+        width: 49
+        height: 25
+      alignment: 9
+      pivot: {x: 0.8525777, y: 0.0842749}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047aba38ce9fa8a46ab62fa873f32d66
+      internalID: -1621982875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palm-sheet0_11
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 178
+        width: 38
+        height: 50
+      alignment: 9
+      pivot: {x: 0.76613015, y: 0.09270233}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba201ad2440afda4c8345417df099226
+      internalID: -795095942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palm-sheet0_12
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 96
+        width: 39
+        height: 50
+      alignment: 9
+      pivot: {x: 0.73106265, y: 0.100127414}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40193a64a6c5b494297260238106e884
+      internalID: -1114314404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palm-sheet0_13
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 98
+        width: 43
+        height: 40
+      alignment: 9
+      pivot: {x: 0.8233799, y: 0.10534382}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4d327428b0c0e14da5988fdc9705ddd
+      internalID: 1462052662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palm-sheet0_14
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 96
+        width: 39
+        height: 50
+      alignment: 9
+      pivot: {x: 0.7322951, y: 0.0969162}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df0f73294b160084ba4c8a449148125b
+      internalID: -1089593181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palm-sheet0_15
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 14
+        width: 38
+        height: 50
+      alignment: 9
+      pivot: {x: 0.7832545, y: 0.11013977}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4301912bec8141242884b5f082601565
+      internalID: -1619330744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palm-sheet0_16
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 14
+        width: 38
+        height: 49
+      alignment: 9
+      pivot: {x: 0.7993967, y: 0.12469257}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 338d5b3cccafada4f9b3e1b6b28458cf
+      internalID: -1930321109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palm-sheet0_17
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 14
+        width: 39
+        height: 50
+      alignment: 9
+      pivot: {x: 0.7322951, y: 0.09270252}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35839ec8db8768e41af41ad8d4552e34
+      internalID: -1303919862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +510,25 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      palm-sheet0_0: 1103562830
+      palm-sheet0_1: 146966480
+      palm-sheet0_10: -1621982875
+      palm-sheet0_11: -795095942
+      palm-sheet0_12: -1114314404
+      palm-sheet0_13: 1462052662
+      palm-sheet0_14: -1089593181
+      palm-sheet0_15: -1619330744
+      palm-sheet0_16: -1930321109
+      palm-sheet0_17: -1303919862
+      palm-sheet0_2: 552189204
+      palm-sheet0_3: 1797922078
+      palm-sheet0_4: -2096385707
+      palm-sheet0_5: -1420255786
+      palm-sheet0_6: -228234336
+      palm-sheet0_7: 1211558368
+      palm-sheet0_8: -237907743
+      palm-sheet0_9: 1958245870
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

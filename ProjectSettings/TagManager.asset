@@ -45,6 +45,9 @@ TagManager:
   - name: VFX_Enviroment
     uniqueID: 3001111493
     locked: 0
+  - name: Enviroment
+    uniqueID: 3728015191
+    locked: 0
   - name: GamePlay
     uniqueID: 988021801
     locked: 0

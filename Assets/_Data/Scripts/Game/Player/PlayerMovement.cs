@@ -14,6 +14,7 @@ public class PlayerMovement : MyBehaviour
     [Header("Components")]
     [SerializeField]
     private PlayerVisualEffect _playerVisualEffect;
+    private Vector2 _lastMoveDir;
     #endregion
 
     #region LoadComponents
@@ -40,6 +41,7 @@ public class PlayerMovement : MyBehaviour
         _moveInput.x = Input.GetAxisRaw("Horizontal"); // A - D
         _moveInput.y = Input.GetAxisRaw("Vertical");   // S - W
         _moveInput = _moveInput.normalized;
+
     }
 
     private void FixedUpdate()
@@ -47,6 +49,11 @@ public class PlayerMovement : MyBehaviour
         // Di chuyển
         _rb2D.velocity = _moveInput * _moveData.MoveSpeed;
         _playerVisualEffect.UpdateVisual(_moveInput);
-        _playerVisualEffect.UpdateAnim(_moveInput, _rb2D.velocity.magnitude);
+        bool isMoving = _rb2D.velocity.magnitude > 0.01f;
+        if (isMoving)
+        {
+            _lastMoveDir = _moveInput;
+        }
+        _playerVisualEffect.UpdateAnim(_lastMoveDir, isMoving);
     }
 }

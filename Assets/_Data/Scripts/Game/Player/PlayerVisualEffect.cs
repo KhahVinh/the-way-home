@@ -42,11 +42,11 @@ public class PlayerVisualEffect : MyBehaviour
 
     }
 
-    public void UpdateAnim(Vector2 dir, float speed)
+    public void UpdateAnim(Vector2 dir, bool isMoving)
     {
         _animator.SetFloat(ANIM_MOVE_X, dir.x);
         _animator.SetFloat(ANIM_MOVE_Y, dir.y);
-        _animator.SetFloat(ANIM_SPEED, speed);
+        _animator.SetFloat(ANIM_SPEED, isMoving ? 1f : 0f);
     }
     #endregion
 }

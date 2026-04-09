@@ -1,8 +1,10 @@
+using System;
 using UnityEngine;
 
 /// <summary>
 /// Base class for UI item, which can be shown or hidden
 /// </summary>
+[RequireComponent(typeof(CanvasGroup))]
 public class UIItem : MyBehaviour, IActionUI
 {
     [SerializeField]

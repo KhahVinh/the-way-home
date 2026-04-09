@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -23,6 +21,7 @@ namespace Inventory.UI
             OnItemDroppedOn, OnItemBeginDrag, OnItemEndDrag,
             OnRightMouseBtnClick;
 
+        [SerializeField]
         private bool empty = true;
 
         public void Awake()

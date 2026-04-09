@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0756f30a60080a44b7e71b3f899893a, type: 3}
+  m_Name: SO_Edible_Meal--Pig
+  m_EditorClassIdentifier: 
+  <IsStackable>k__BackingField: 0
+  <MaxStackSize>k__BackingField: 30
+  <Name>k__BackingField: Meal Pig
+  <Description>k__BackingField: It has the ability to restore the character's health.
+  <ItemImage>k__BackingField: {fileID: -219064778, guid: eb84cf5ea84f068449b21305bb04902c, type: 3}
+  modifiersData:
+  - statModifier: {fileID: 11400000, guid: 30554e27498b3174493cd017239cd56f, type: 2}
+    value: 4

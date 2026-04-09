@@ -29,11 +29,19 @@ namespace Inventory.Model
             }
         }
 
+        /// <summary>
+        /// Hàm thêm item vào trong kho đồ
+        /// Kiểm tra xem có vật phẩm trùng lặp không -> nếu có thì thêm vào slot hiện đang chiếm | không/đầy thì thêm vào slot mới
+        /// </summary>
+        /// <param name="item">Item đầu vào</param>
+        /// <param name="quantity">Số lượng</param>
+        /// <param name="itemState">Tham số của vật phẩm</param>
+        /// <returns></returns>
         public int AddItem(ItemSO item, int quantity, List<ItemParameter> itemState = null)
         {
             if (item.IsStackable == false)
             {
-                for (int i = 0; i < inventoryItems.Count; i++) //! Lưu ý đoạn code này
+                for (int i = 0; i < inventoryItems.Count; i++)
                 {
                     while (quantity > 0 && IsInventoryFull() == false)
                     {
@@ -48,6 +56,13 @@ namespace Inventory.Model
             return quantity;
         }
 
+        /// <summary>
+        /// Hàm thêm item vào hàng slot đầu tiên trống trong kho đồ
+        /// </summary>
+        /// <param name="item">Dữ liệu item đầu vào</param>
+        /// <param name="quantity">Số lượng</param>
+        /// <param name="itemState">Tham số của item</param>
+        /// <returns></returns>
         private int AddItemToFirstFreeSlot(ItemSO item, int quantity
             , List<ItemParameter> itemState = null)
         {

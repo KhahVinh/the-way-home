@@ -1,12 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Inventory.UI
 {
     public class UIInventoryPage : MonoBehaviour
     {
+        #region Var
         [SerializeField]
         private UIInventoryItem itemPrefab;
 
@@ -32,11 +34,15 @@ namespace Inventory.UI
         [SerializeField]
         private ItemActionPanel actionPanel;
 
+        public bool IsShowing { get; private set; }
+
+        #endregion
+
         private void Awake()
         {
             Hide();
             mouseFollower.Toggle(false);
-            itemDescription.ResetDescription();
+            // itemDescription.ResetDescription();
         }
 
         public void InitializeInventoryUI(int inventorysize)
@@ -46,6 +52,7 @@ namespace Inventory.UI
                 UIInventoryItem uiItem =
                     Instantiate(itemPrefab, Vector3.zero, Quaternion.identity);
                 uiItem.transform.SetParent(contentPanel);
+                uiItem.transform.localScale = Vector3.one;
                 listOfUIItems.Add(uiItem);
                 uiItem.OnItemClicked += HandleItemSelection;
                 uiItem.OnItemBeginDrag += HandleBeginDrag;
@@ -66,7 +73,7 @@ namespace Inventory.UI
 
         internal void UpdateDescription(int itemIndex, Sprite itemImage, string name, string description)
         {
-            itemDescription.SetDescription(itemImage, name, description);
+            // itemDescription.SetDescription(itemImage, name, description);
             DeselectAllItems();
             listOfUIItems[itemIndex].Select();
         }
@@ -138,25 +145,31 @@ namespace Inventory.UI
 
         public void Show()
         {
-            gameObject.SetActive(true);
+            // gameObject.SetActive(true);
+            this.IsShowing = true;
+            int size = listOfUIItems.Count / 2;
+            for (int i = size; i < listOfUIItems.Count; i++)
+            {
+                listOfUIItems[i].gameObject.SetActive(true);
+            }
             ResetSelection();
         }
 
         public void ResetSelection()
         {
-            itemDescription.ResetDescription();
+            // itemDescription.ResetDescription();
             DeselectAllItems();
         }
 
         public void AddAction(string actionName, Action performAction)
         {
-            actionPanel.AddButon(actionName, performAction);
+            // actionPanel.AddButon(actionName, performAction);
         }
 
         public void ShowItemAction(int itemIndex)
         {
-            actionPanel.Toggle(true);
-            actionPanel.transform.position = listOfUIItems[itemIndex].transform.position;
+            // actionPanel.Toggle(true);
+            // actionPanel.transform.position = listOfUIItems[itemIndex].transform.position;
         }
 
         private void DeselectAllItems()
@@ -165,13 +178,19 @@ namespace Inventory.UI
             {
                 item.Deselect();
             }
-            actionPanel.Toggle(false);
+            // actionPanel.Toggle(false);
         }
 
         public void Hide()
         {
-            actionPanel.Toggle(false);
-            gameObject.SetActive(false);
+            // actionPanel.Toggle(false);
+            // gameObject.SetActive(false);
+            int size = listOfUIItems.Count / 2;
+            this.IsShowing = false;
+            for (int i = size; i < listOfUIItems.Count; i++)
+            {
+                listOfUIItems[i].gameObject.SetActive(false);
+            }
             ResetDraggedItem();
         }
     }

@@ -10,17 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c0756f30a60080a44b7e71b3f899893a, type: 3}
-  m_Name: SO_Chicken
+  m_Name: SO_Edible_Meal--Chicken
   m_EditorClassIdentifier: 
   <IsStackable>k__BackingField: 0
   <MaxStackSize>k__BackingField: 30
   <Name>k__BackingField: Chicken
-  <Description>k__BackingField: "C\xF3 kh\u1EA3 n\u0103ng h\u1ED3i ph\u1EE5c m\xE1u
-    cho nh\xE2n v\u1EADt"
+  <Description>k__BackingField: It has the ability to restore the character's health.
   <ItemImage>k__BackingField: {fileID: 1118090832, guid: eb84cf5ea84f068449b21305bb04902c, type: 3}
-  <DefaultParametersList>k__BackingField:
-  - itemParameter: {fileID: 11400000, guid: 27bb66b112568fb4083afd693ba8d959, type: 2}
-    value: 1
   modifiersData:
   - statModifier: {fileID: 11400000, guid: 30554e27498b3174493cd017239cd56f, type: 2}
-    value: 1
+    value: 3

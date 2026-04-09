@@ -26,7 +26,7 @@ namespace Inventory
 
         private void Start()
         {
-            PrepareUI();
+            PrepareUI(); // Khởi tạo UI slot inventory
             PrepareInventoryData();
         }
 
@@ -47,7 +47,7 @@ namespace Inventory
             inventoryUI.ResetAllItems();
             foreach (var item in inventoryState)
             {
-                inventoryUI.UpdateData(item.Key, item.Value.item.ItemImage, 
+                inventoryUI.UpdateData(item.Key, item.Value.item.ItemImage,
                     item.Value.quantity);
             }
         }
@@ -68,9 +68,9 @@ namespace Inventory
                 return;
 
             IItemAction itemAction = inventoryItem.item as IItemAction;
-            if(itemAction != null)
+            if (itemAction != null)
             {
-                
+
                 inventoryUI.ShowItemAction(itemIndex);
                 inventoryUI.AddAction(itemAction.ActionName, () => PerformAction(itemIndex));
             }
@@ -156,9 +156,9 @@ namespace Inventory
 
         public void Update()
         {
-            if (Input.GetKeyDown(KeyCode.I))
+            if (Input.GetKeyDown(KeyCode.Q))
             {
-                if (inventoryUI.isActiveAndEnabled == false)
+                if (!inventoryUI.IsShowing)
                 {
                     inventoryUI.Show();
                     foreach (var item in inventoryData.GetCurrentInventoryState())

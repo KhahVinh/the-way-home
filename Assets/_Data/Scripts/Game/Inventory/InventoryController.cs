@@ -59,6 +59,7 @@ namespace Inventory
             inventoryUI.OnSelectionRequested += HandleSelectionRequest;
             inventoryUI.OnSwapItems += HandleSwapItems;
             inventoryUI.OnStartDragging += HandleDragging;
+            inventoryUI.OnDropOutside += HandleDropOutside;
             inventoryUI.OnItemActionRequested += HandleItemActionRequest;
         }
 
@@ -88,7 +89,7 @@ namespace Inventory
         {
             inventoryData.RemoveItem(itemIndex, quantity);
             inventoryUI.ResetSelection();
-            audioSource.PlayOneShot(dropClip);
+            audioSource.PlayOneShot(dropClip); // Play shot audio
         }
 
         public void PerformAction(int itemIndex)
@@ -138,6 +139,22 @@ namespace Inventory
             string description = PrepareDescription(inventoryItem);
             inventoryUI.UpdateDescription(itemIndex,
                 item.Name, description);
+        }
+
+        private void HandleDropOutside(int itemIndex)
+        {
+            InventoryItem inventoryItem = inventoryData.GetItemAt(itemIndex);
+            if (inventoryItem.IsEmpty)
+                return;
+
+            int quantityToDrop = inventoryItem.quantity;
+            if (Input.GetKey(KeyCode.Z))
+            {
+                if (quantityToDrop > 1) // Nếu số lượng lớn hơn 1 thì mới chia 2
+                    quantityToDrop = quantityToDrop / 2;
+            }
+
+            DropItem(itemIndex, quantityToDrop);
         }
 
         private void HandleSelectionRequest(int itemIndex)

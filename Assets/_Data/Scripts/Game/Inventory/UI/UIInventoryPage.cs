@@ -28,11 +28,11 @@ namespace Inventory.UI
 
         public event Action<int> OnDescriptionRequested, OnSelectionRequested,
                 OnItemActionRequested,
-                OnStartDragging;
+                OnStartDragging, OnDropOutside;
 
         public event Action<int, int> OnSwapItems;
 
-        [SerializeField]
+        // [SerializeField]
         private ItemActionPanel actionPanel;
 
         public bool IsShowing { get; private set; }
@@ -141,6 +141,14 @@ namespace Inventory.UI
         {
             mouseFollower.Toggle(false);
             currentlyDraggedItemIndex = -1;
+        }
+
+        public void HandleDropOutside()
+        {
+            if (currentlyDraggedItemIndex == -1)
+                return;
+            OnDropOutside?.Invoke(currentlyDraggedItemIndex);
+            ResetDraggedItem();
         }
 
         private void HandleBeginDrag(UIInventoryItem inventoryItemUI)

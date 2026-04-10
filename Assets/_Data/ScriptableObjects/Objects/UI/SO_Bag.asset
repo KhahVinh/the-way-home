@@ -17,5 +17,5 @@ MonoBehaviour:
   ListGuideText:
   - '[LMB], transfer'
   - '[LMB], drop'
-  - '[Z], drop number'
+  - '[LMB + Z], drop number'
   - '[ESC], Close'

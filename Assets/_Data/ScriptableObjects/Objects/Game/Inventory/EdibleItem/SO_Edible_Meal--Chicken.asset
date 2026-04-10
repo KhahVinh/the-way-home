@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0756f30a60080a44b7e71b3f899893a, type: 3}
   m_Name: SO_Edible_Meal--Chicken
   m_EditorClassIdentifier: 
-  <IsStackable>k__BackingField: 0
+  <IsStackable>k__BackingField: 1
   <MaxStackSize>k__BackingField: 30
   <Name>k__BackingField: Chicken
   <Description>k__BackingField: It has the ability to restore the character's health.
   <ItemImage>k__BackingField: {fileID: 1118090832, guid: eb84cf5ea84f068449b21305bb04902c, type: 3}
+  <DefaultParametersList>k__BackingField: []
   modifiersData:
   - statModifier: {fileID: 11400000, guid: 30554e27498b3174493cd017239cd56f, type: 2}
     value: 3

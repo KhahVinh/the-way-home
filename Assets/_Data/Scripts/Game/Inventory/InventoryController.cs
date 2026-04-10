@@ -61,6 +61,7 @@ namespace Inventory
             inventoryUI.OnStartDragging += HandleDragging;
             inventoryUI.OnDropOutside += HandleDropOutside;
             inventoryUI.OnItemActionRequested += HandleItemActionRequest;
+            inventoryUI.Hide();
         }
 
         private void HandleItemActionRequest(int itemIndex)

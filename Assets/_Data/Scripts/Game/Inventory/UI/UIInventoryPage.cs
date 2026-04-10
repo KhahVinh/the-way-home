@@ -41,7 +41,6 @@ namespace Inventory.UI
 
         private void Awake()
         {
-            Hide();
             mouseFollower.Toggle(false);
             itemDescription.ResetDescription();
             _itemTitle.ChangeText();

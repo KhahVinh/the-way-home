@@ -56,6 +56,7 @@ namespace Inventory
         {
             inventoryUI.InitializeInventoryUI(inventoryData.Size);
             inventoryUI.OnDescriptionRequested += HandleDescriptionRequest;
+            inventoryUI.OnSelectionRequested += HandleSelectionRequest;
             inventoryUI.OnSwapItems += HandleSwapItems;
             inventoryUI.OnStartDragging += HandleDragging;
             inventoryUI.OnItemActionRequested += HandleItemActionRequest;
@@ -130,13 +131,24 @@ namespace Inventory
             InventoryItem inventoryItem = inventoryData.GetItemAt(itemIndex);
             if (inventoryItem.IsEmpty)
             {
-                inventoryUI.ResetSelection();
+                inventoryUI.ResetDescription();
                 return;
             }
             ItemSO item = inventoryItem.item;
             string description = PrepareDescription(inventoryItem);
-            inventoryUI.UpdateDescription(itemIndex, item.ItemImage,
-                item.name, description);
+            inventoryUI.UpdateDescription(itemIndex,
+                item.Name, description);
+        }
+
+        private void HandleSelectionRequest(int itemIndex)
+        {
+            InventoryItem inventoryItem = inventoryData.GetItemAt(itemIndex);
+            if (inventoryItem.IsEmpty)
+            {
+                inventoryUI.ResetSelection();
+                return;
+            }
+            inventoryUI.UpdateSelection(itemIndex);
         }
 
         private string PrepareDescription(InventoryItem inventoryItem)

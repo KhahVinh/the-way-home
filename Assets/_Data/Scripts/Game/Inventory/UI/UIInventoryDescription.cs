@@ -9,32 +9,36 @@ namespace Inventory.UI
     public class UIInventoryDescription : MonoBehaviour
     {
         [SerializeField]
-        private Image itemImage;
-        [SerializeField]
         private TMP_Text title;
         [SerializeField]
         private TMP_Text description;
 
+        [SerializeField]
+        private Canvas _canvas;
+        [SerializeField]
+        private RectTransform _rectTransform;
+
+        [SerializeField]
+        private Vector2 _offset = new Vector2(0f, 80f);
 
         public void Awake()
         {
             ResetDescription();
+            _canvas = transform.root.GetComponent<Canvas>();
         }
 
         public void ResetDescription()
         {
-            itemImage.gameObject.SetActive(false);
             title.text = "";
             description.text = "";
         }
 
-        public void SetDescription(Sprite sprite, string itemName,
-            string itemDescription)
+        public void SetDescription(RectTransform itemRect, string itemName, string itemDescription)
         {
-            itemImage.gameObject.SetActive(true);
-            itemImage.sprite = sprite;
+            MatchUI.HandleMatchUI(_rectTransform, itemRect, _canvas, _offset);
             title.text = itemName;
             description.text = itemDescription;
+            gameObject.SetActive(true);
         }
     }
 }

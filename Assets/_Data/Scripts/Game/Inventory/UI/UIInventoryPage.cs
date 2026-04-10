@@ -25,7 +25,7 @@ namespace Inventory.UI
 
         private int currentlyDraggedItemIndex = -1;
 
-        public event Action<int> OnDescriptionRequested,
+        public event Action<int> OnDescriptionRequested, OnSelectionRequested,
                 OnItemActionRequested,
                 OnStartDragging;
 
@@ -42,7 +42,7 @@ namespace Inventory.UI
         {
             Hide();
             mouseFollower.Toggle(false);
-            // itemDescription.ResetDescription();
+            itemDescription.ResetDescription();
         }
 
         public void InitializeInventoryUI(int inventorysize)
@@ -55,6 +55,8 @@ namespace Inventory.UI
                 uiItem.transform.localScale = Vector3.one;
                 listOfUIItems.Add(uiItem);
                 uiItem.OnItemClicked += HandleItemSelection;
+                uiItem.OnItemPointerEnter += HandleShowDescription;
+                uiItem.OnItemPointerExit += HandleHideDescription;
                 uiItem.OnItemBeginDrag += HandleBeginDrag;
                 uiItem.OnItemDroppedOn += HandleSwap;
                 uiItem.OnItemEndDrag += HandleEndDrag;
@@ -71,9 +73,15 @@ namespace Inventory.UI
             }
         }
 
-        internal void UpdateDescription(int itemIndex, Sprite itemImage, string name, string description)
+        internal void UpdateDescription(int itemIndex, string name, string description)
         {
-            // itemDescription.SetDescription(itemImage, name, description);
+            itemDescription.SetDescription(listOfUIItems[itemIndex].GetComponent<RectTransform>(), name, description);
+            // DeselectAllItems();
+            // listOfUIItems[itemIndex].Select();
+        }
+
+        internal void UpdateSelection(int itemIndex)
+        {
             DeselectAllItems();
             listOfUIItems[itemIndex].Select();
         }
@@ -113,6 +121,19 @@ namespace Inventory.UI
             HandleItemSelection(inventoryItemUI);
         }
 
+        private void HandleShowDescription(UIInventoryItem inventoryItemUI)
+        {
+            int index = listOfUIItems.IndexOf(inventoryItemUI);
+            if (index == -1)
+                return;
+            OnDescriptionRequested?.Invoke(index);
+        }
+
+        private void HandleHideDescription(UIInventoryItem inventoryItemUI)
+        {
+            this.itemDescription.gameObject.SetActive(false);
+        }
+
         private void ResetDraggedItem()
         {
             mouseFollower.Toggle(false);
@@ -140,7 +161,7 @@ namespace Inventory.UI
             int index = listOfUIItems.IndexOf(inventoryItemUI);
             if (index == -1)
                 return;
-            OnDescriptionRequested?.Invoke(index);
+            OnSelectionRequested?.Invoke(index);
         }
 
         public void Show()
@@ -157,8 +178,13 @@ namespace Inventory.UI
 
         public void ResetSelection()
         {
-            // itemDescription.ResetDescription();
+            itemDescription.ResetDescription();
             DeselectAllItems();
+        }
+
+        public void ResetDescription()
+        {
+            itemDescription.ResetDescription();
         }
 
         public void AddAction(string actionName, Action performAction)

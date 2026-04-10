@@ -7,7 +7,7 @@ using UnityEngine.EventSystems;
 namespace Inventory.UI
 {
     public class UIInventoryItem : MonoBehaviour, IPointerClickHandler,
-        IBeginDragHandler, IEndDragHandler, IDropHandler, IDragHandler
+        IBeginDragHandler, IEndDragHandler, IDropHandler, IDragHandler, IPointerEnterHandler, IPointerExitHandler
     {
         [SerializeField]
         private Image itemImage;
@@ -19,7 +19,7 @@ namespace Inventory.UI
 
         public event Action<UIInventoryItem> OnItemClicked,
             OnItemDroppedOn, OnItemBeginDrag, OnItemEndDrag,
-            OnRightMouseBtnClick;
+            OnRightMouseBtnClick, OnItemPointerEnter, OnItemPointerExit;
 
         [SerializeField]
         private bool empty = true;
@@ -83,6 +83,16 @@ namespace Inventory.UI
         public void OnDrag(PointerEventData eventData)
         {
 
+        }
+
+        public void OnPointerEnter(PointerEventData eventData)
+        {
+            OnItemPointerEnter?.Invoke(this);
+        }
+
+        public void OnPointerExit(PointerEventData eventData)
+        {
+            OnItemPointerExit?.Invoke(this);
         }
     }
 }

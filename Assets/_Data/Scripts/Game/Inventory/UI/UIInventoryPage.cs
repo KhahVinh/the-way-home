@@ -1,7 +1,5 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Inventory.UI
@@ -23,6 +21,9 @@ namespace Inventory.UI
 
         List<UIInventoryItem> listOfUIItems = new List<UIInventoryItem>();
 
+        [SerializeField]
+        private ItemTitleSelected _itemTitle;
+
         private int currentlyDraggedItemIndex = -1;
 
         public event Action<int> OnDescriptionRequested, OnSelectionRequested,
@@ -43,6 +44,7 @@ namespace Inventory.UI
             Hide();
             mouseFollower.Toggle(false);
             itemDescription.ResetDescription();
+            _itemTitle.ChangeText();
         }
 
         public void InitializeInventoryUI(int inventorysize)
@@ -80,10 +82,11 @@ namespace Inventory.UI
             // listOfUIItems[itemIndex].Select();
         }
 
-        internal void UpdateSelection(int itemIndex)
+        internal void UpdateSelection(int itemIndex, string name)
         {
             DeselectAllItems();
             listOfUIItems[itemIndex].Select();
+            _itemTitle.ChangeText(name);
         }
 
         public void UpdateData(int itemIndex,
@@ -178,8 +181,9 @@ namespace Inventory.UI
 
         public void ResetSelection()
         {
-            itemDescription.ResetDescription();
+            itemDescription.ResetDescription(); // Reset text of description
             DeselectAllItems();
+            _itemTitle.ChangeText(); // Reset text
         }
 
         public void ResetDescription()

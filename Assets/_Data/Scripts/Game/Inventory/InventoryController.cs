@@ -148,7 +148,8 @@ namespace Inventory
                 inventoryUI.ResetSelection();
                 return;
             }
-            inventoryUI.UpdateSelection(itemIndex);
+            string name = inventoryItem.item.Name;
+            inventoryUI.UpdateSelection(itemIndex, name);
         }
 
         private string PrepareDescription(InventoryItem inventoryItem)

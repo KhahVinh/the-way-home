@@ -15,6 +15,8 @@ public class PlayerMovement : MyBehaviour
     [SerializeField]
     private PlayerVisualEffect _playerVisualEffect;
     private Vector2 _lastMoveDir;
+
+    public Vector2 LastMoveDir => _lastMoveDir;
     #endregion
 
     #region LoadComponents

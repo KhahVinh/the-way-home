@@ -24,21 +24,20 @@ public class Item : MonoBehaviour
 
     public void DestroyItem()
     {
-        GetComponent<Collider2D>().enabled = false;
+        transform.parent.GetComponent<Collider2D>().enabled = false;
         StartCoroutine(AnimateItemPickup());
-
     }
 
     private IEnumerator AnimateItemPickup()
     {
-        audioSource.Play();
+        // audioSource.Play(); // Bật lại khi có âm thanh
         Vector3 startScale = transform.localScale;
         Vector3 endScale = Vector3.zero;
         float currentTime = 0;
         while (currentTime < duration)
         {
             currentTime += Time.deltaTime;
-            transform.localScale = 
+            transform.localScale =
                 Vector3.Lerp(startScale, endScale, currentTime / duration);
             yield return null;
         }

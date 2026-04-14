@@ -48,5 +48,19 @@ public class PlayerVisualEffect : MyBehaviour
         _animator.SetFloat(ANIM_MOVE_Y, dir.y);
         _animator.SetFloat(ANIM_SPEED, isMoving ? 1f : 0f);
     }
+
+    public void UpdateAnim(Vector2 dir, bool isMoving, bool isSlide)
+    {
+        _animator.SetFloat(ANIM_MOVE_X, dir.x);
+        _animator.SetFloat(ANIM_MOVE_Y, dir.y);
+        _animator.SetFloat(ANIM_SPEED, isMoving ? (isSlide ? 0.5f : 1f) : 0f);
+    }
     #endregion
+}
+
+public struct PlayerVisualData
+{
+    public Vector2 MoveInput;
+    public bool IsMoving;
+    public bool IsSlide;
 }

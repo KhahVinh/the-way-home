@@ -6,6 +6,7 @@ public class PlayerChop : MonoBehaviour
     public LayerMask treeLayer;
     public int damage = 1;
     public PlayerMovement _playerMoment;
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8205298542154493331}
   - component: {fileID: 1346916347065962563}
-  - component: {fileID: 54783842242285219}
+  - component: {fileID: 5797124109245771467}
   m_Layer: 0
   m_Name: P_ItemCollected
   m_TagString: Untagged
@@ -85,24 +85,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &54783842242285219
-BoxCollider:
+--- !u!114 &5797124109245771467
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5126391660733584840}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30f61dfe657cf444bab13f9ded752deb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <InventoryItem>k__BackingField: {fileID: 0}
+  <Quantity>k__BackingField: 1
+  audioSource: {fileID: 0}
+  duration: 0.3

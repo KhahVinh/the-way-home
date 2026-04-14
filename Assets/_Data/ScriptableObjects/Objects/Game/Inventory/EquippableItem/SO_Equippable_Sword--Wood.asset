@@ -15,7 +15,7 @@ MonoBehaviour:
   <IsStackable>k__BackingField: 0
   <MaxStackSize>k__BackingField: 1
   <Name>k__BackingField: Sword Wood
-  <Description>k__BackingField: "G\xE2y s\xE1t th\u01B0\u01A1ng"
+  <Description>k__BackingField: Have damage
   <ItemImage>k__BackingField: {fileID: -511474396, guid: ced7d766007e2a24698e481d09ffd6ba, type: 3}
   <DefaultParametersList>k__BackingField:
   - itemParameter: {fileID: 11400000, guid: 311b21f0b58657343a849a7987896e83, type: 2}

@@ -1,8 +1,9 @@
 using Inventory.Model;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Hệ thống nhặt đồ, khi player chạm vào item sẽ gọi hàm AddItem trong InventorySO để thêm item vào kho đồ
+/// </summary>
 public class PickUpSystem : MonoBehaviour
 {
     [SerializeField]
@@ -10,7 +11,7 @@ public class PickUpSystem : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Item item = collision.GetComponent<Item>();
+        Item item = collision.GetComponentInChildren<Item>();
         if (item != null)
         {
             int reminder = inventoryData.AddItem(item.InventoryItem, item.Quantity);

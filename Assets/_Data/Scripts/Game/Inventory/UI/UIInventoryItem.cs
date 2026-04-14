@@ -18,8 +18,7 @@ namespace Inventory.UI
         private Image borderImage;
 
         public event Action<UIInventoryItem> OnItemClicked,
-            OnItemDroppedOn, OnItemBeginDrag, OnItemEndDrag,
-            OnRightMouseBtnClick, OnItemPointerEnter, OnItemPointerExit;
+            OnItemDroppedOn, OnItemBeginDrag, OnItemEndDrag, OnItemPointerEnter, OnItemPointerExit;
 
         [SerializeField]
         private bool empty = true;
@@ -53,14 +52,8 @@ namespace Inventory.UI
 
         public void OnPointerClick(PointerEventData pointerData)
         {
-            if (pointerData.button == PointerEventData.InputButton.Right)
-            {
-                OnRightMouseBtnClick?.Invoke(this);
-            }
-            else
-            {
-                OnItemClicked?.Invoke(this);
-            }
+
+            OnItemClicked?.Invoke(this);
         }
 
         public void OnEndDrag(PointerEventData eventData)

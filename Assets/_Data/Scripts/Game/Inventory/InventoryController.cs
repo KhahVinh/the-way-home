@@ -1,5 +1,6 @@
 using Inventory.Model;
 using Inventory.UI;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
@@ -21,6 +22,8 @@ namespace Inventory
 
         [SerializeField]
         private AudioSource audioSource;
+
+        public Action OnSetDeselection;
 
         private void Start()
         {
@@ -55,33 +58,11 @@ namespace Inventory
             inventoryUI.InitializeInventoryUI(inventoryData.Size);
             inventoryUI.OnDescriptionRequested += HandleDescriptionRequest;
             inventoryUI.OnSelectionRequested += HandleSelectionRequest;
+            inventoryUI.OnSelectionRequested += PerformAction;
             inventoryUI.OnSwapItems += HandleSwapItems;
             inventoryUI.OnStartDragging += HandleDragging;
             inventoryUI.OnDropOutside += HandleDropOutside;
-            inventoryUI.OnItemActionRequested += HandleItemActionRequest;
             inventoryUI.Hide();
-        }
-
-        private void HandleItemActionRequest(int itemIndex)
-        {
-            InventoryItem inventoryItem = inventoryData.GetItemAt(itemIndex);
-            if (inventoryItem.IsEmpty)
-                return;
-
-            IItemAction itemAction = inventoryItem.item as IItemAction;
-            if (itemAction != null)
-            {
-
-                inventoryUI.ShowItemAction(itemIndex);
-                inventoryUI.AddAction(itemAction.ActionName, () => PerformAction(itemIndex));
-            }
-
-            IDestroyableItem destroyableItem = inventoryItem.item as IDestroyableItem;
-            if (destroyableItem != null)
-            {
-                inventoryUI.AddAction("Drop", () => DropItem(itemIndex, inventoryItem.quantity));
-            }
-
         }
 
         private void DropItem(int itemIndex, int quantity)
@@ -162,6 +143,7 @@ namespace Inventory
             if (inventoryItem.IsEmpty)
             {
                 inventoryUI.ResetSelection();
+                this.OnSetDeselection?.Invoke();
                 return;
             }
             string name = inventoryItem.item.Name;

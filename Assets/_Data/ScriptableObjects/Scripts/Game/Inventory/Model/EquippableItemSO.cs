@@ -7,10 +7,9 @@ namespace Inventory.Model
         fileName = "SO_EquippableItem",
         menuName = "Game/Inventory/Item/EquippableItem"
     )]
-    public class EquippableItemSO : ItemSO, IDestroyableItem, IItemAction
+    public class EquippableItemSO : ItemSO, IItemAction
     {
         public string ActionName => "Equip";
-
         [field: SerializeField]
         public AudioClip actionSFX { get; private set; }
 

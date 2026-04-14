@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 4865945069896858182}
   - component: {fileID: 7286347461774079716}
   - component: {fileID: 6849716398061611889}
+  - component: {fileID: 5750134867030629563}
+  - component: {fileID: 802213603020613287}
   m_Layer: 0
   m_Name: Script
   m_TagString: Untagged
@@ -112,6 +114,48 @@ MonoBehaviour:
   _characterHealthData: {fileID: 11400000, guid: a58fa16b1eb85b140a4a82302a27a386, type: 2}
   _healthItemUI: {fileID: 0}
   _playerVisualEffect: {fileID: 4865945069896858182}
+--- !u!114 &5750134867030629563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223891466424091900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43ef6888aa7fd5b49a74b9bb86257671, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventoryUI: {fileID: 0}
+  inventoryData: {fileID: 11400000, guid: 651fa282c7d181544b24c2ded3c0f683, type: 2}
+  initialItems:
+  - quantity: 4
+    item: {fileID: 11400000, guid: 09854deddaf602b4b871d073daa8f8bd, type: 2}
+    itemState: []
+  - quantity: 5
+    item: {fileID: 11400000, guid: 07baf21a6b7738941987ba574199b5a5, type: 2}
+    itemState: []
+  - quantity: 1
+    item: {fileID: 11400000, guid: fa726ff5fbaf4874f9b1e1bff164f4b2, type: 2}
+    itemState: []
+  dropClip: {fileID: 0}
+  audioSource: {fileID: 0}
+--- !u!114 &802213603020613287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223891466424091900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0f2644a592f497479c2376d4170babd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon: {fileID: 0}
+  inventoryData: {fileID: 0}
+  parametersToModify: []
+  itemCurrentState: []
 --- !u!1 &7379731239722190179
 GameObject:
   m_ObjectHideFlags: 0
@@ -158,6 +202,7 @@ GameObject:
   - component: {fileID: 231151005564858298}
   - component: {fileID: 907720871907162974}
   - component: {fileID: 5625680097293725294}
+  - component: {fileID: 2078134580915890892}
   m_Layer: 0
   m_Name: P_Player
   m_TagString: Untagged
@@ -340,6 +385,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoryData: {fileID: 11400000, guid: 651fa282c7d181544b24c2ded3c0f683, type: 2}
+--- !u!114 &2078134580915890892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8155890406325434233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5a38627f8b09f547b583594211c6fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6920573717732683537
 PrefabInstance:
   m_ObjectHideFlags: 0

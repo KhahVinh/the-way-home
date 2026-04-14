@@ -1,3 +1,4 @@
+using Inventory;
 using Inventory.Model;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,18 +9,28 @@ public class AgentWeapon : MonoBehaviour
     private EquippableItemSO weapon;
 
     [SerializeField]
-    private InventorySO inventoryData;
-
-    [SerializeField]
     private List<ItemParameter> parametersToModify, itemCurrentState;
 
-    public void SetWeapon(EquippableItemSO weaponItemSO, List<ItemParameter> itemState)
+    public EquippableItemSO Weapon { get { return weapon; } }
+
+    [SerializeField]
+    private InventoryController _inventoryController;
+
+    private void Start()
+    {
+        _inventoryController.OnSetDeselection += HandleDeselection;
+    }
+
+    public void HandleDeselection()
     {
         if (weapon != null)
         {
-            inventoryData.AddItem(weapon, 1, itemCurrentState);
+            weapon = null;
+            itemCurrentState.Clear();
         }
-
+    }
+    public void SetWeapon(EquippableItemSO weaponItemSO, List<ItemParameter> itemState)
+    {
         this.weapon = weaponItemSO;
         this.itemCurrentState = new List<ItemParameter>(itemState);
         ModifyParameters();
@@ -40,5 +51,19 @@ public class AgentWeapon : MonoBehaviour
                 };
             }
         }
+    }
+
+    /// <summary>
+    /// Hàm này trả lại giá trị của một tham số cụ thể dựa trên itemCurentState. Nếu tham số không tồn tại trong ItemCurrentState, nó sẽ trả về 0. Hàm này hữu ích để truy cập các giá trị tham số đã được điều chỉnh bởi vũ khí hiện tại.
+    /// </summary>
+    /// <param name="itemParameter"></param>
+    /// <returns></returns>
+    public float GetValueOfParameter(ItemParameter itemParameter)
+    {
+        if (itemCurrentState.Contains(itemParameter))
+        {
+            return itemCurrentState[itemCurrentState.IndexOf(itemParameter)].value;
+        }
+        return 0f;
     }
 }

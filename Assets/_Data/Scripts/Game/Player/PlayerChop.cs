@@ -1,35 +1,37 @@
+using Inventory.Model;
 using UnityEngine;
 
 public class PlayerChop : MonoBehaviour
 {
     public float range = 1.5f;
-    public LayerMask treeLayer;
-    public int damage = 1;
+    public LayerMask detectLayer;
     public PlayerMovement _playerMoment;
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Chop();
-        }
-    }
+    [SerializeField]
+    private AgentWeapon _agentWeapon;
+    [SerializeField]
+    private ItemParameter _parameter;
 
-    private void Chop()
+    public void Chop()
     {
+        Vector2 dir = new Vector2();
         if (_playerMoment.LastMoveDir != Vector2.zero)
         {
-            RaycastHit2D hit = Physics2D.Raycast(
-                transform.position,
-                _playerMoment.LastMoveDir,
-                range,
-                treeLayer
-            );
+            dir.x = _playerMoment.LastMoveDir.x;
+            dir.y = _playerMoment.LastMoveDir.y;
+        }
+        // Xử lí phá hủy đồ vật bằng raycast
+        RaycastHit2D hit = Physics2D.Raycast(
+            transform.position,
+            dir,
+            range,
+            detectLayer
+        );
 
-            if (hit.collider != null)
-            {
-                hit.collider.GetComponent<ItemDetect>()?.TakeDamage(damage);
-            }
+        // Xử lí chặt cây, phá hủy item
+        if (hit.collider != null)
+        {
+            hit.collider.GetComponent<ItemDetect>()?.TakeDamage((int)_agentWeapon.GetValueOfParameter(_parameter));
         }
     }
 

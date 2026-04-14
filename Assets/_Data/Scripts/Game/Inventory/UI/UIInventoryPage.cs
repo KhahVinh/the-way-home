@@ -26,9 +26,7 @@ namespace Inventory.UI
 
         private int currentlyDraggedItemIndex = -1;
 
-        public event Action<int> OnDescriptionRequested, OnSelectionRequested,
-                OnItemActionRequested,
-                OnStartDragging, OnDropOutside;
+        public event Action<int> OnDescriptionRequested, OnSelectionRequested, OnStartDragging, OnDropOutside;
 
         public event Action<int, int> OnSwapItems;
 
@@ -61,7 +59,6 @@ namespace Inventory.UI
                 uiItem.OnItemBeginDrag += HandleBeginDrag;
                 uiItem.OnItemDroppedOn += HandleSwap;
                 uiItem.OnItemEndDrag += HandleEndDrag;
-                uiItem.OnRightMouseBtnClick += HandleShowItemActions;
             }
         }
 
@@ -95,16 +92,6 @@ namespace Inventory.UI
             {
                 listOfUIItems[itemIndex].SetData(itemImage, itemQuantity);
             }
-        }
-
-        private void HandleShowItemActions(UIInventoryItem inventoryItemUI)
-        {
-            int index = listOfUIItems.IndexOf(inventoryItemUI);
-            if (index == -1)
-            {
-                return;
-            }
-            OnItemActionRequested?.Invoke(index);
         }
 
         private void HandleEndDrag(UIInventoryItem inventoryItemUI)
@@ -198,30 +185,16 @@ namespace Inventory.UI
             itemDescription.ResetDescription();
         }
 
-        public void AddAction(string actionName, Action performAction)
-        {
-            // actionPanel.AddButon(actionName, performAction);
-        }
-
-        public void ShowItemAction(int itemIndex)
-        {
-            // actionPanel.Toggle(true);
-            // actionPanel.transform.position = listOfUIItems[itemIndex].transform.position;
-        }
-
         private void DeselectAllItems()
         {
             foreach (UIInventoryItem item in listOfUIItems)
             {
                 item.Deselect();
             }
-            // actionPanel.Toggle(false);
         }
 
         public void Hide()
         {
-            // actionPanel.Toggle(false);
-            // gameObject.SetActive(false);
             int size = listOfUIItems.Count / 2;
             this.IsShowing = false;
             for (int i = size; i < listOfUIItems.Count; i++)

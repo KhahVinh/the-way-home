@@ -49,11 +49,11 @@ public class PlayerVisualEffect : MyBehaviour
         _animator.SetFloat(ANIM_SPEED, isMoving ? 1f : 0f);
     }
 
-    public void UpdateAnim(Vector2 dir, bool isMoving, bool isSlide)
+    public void UpdateAnimViaName(string animName, Vector2 dir)
     {
         _animator.SetFloat(ANIM_MOVE_X, dir.x);
         _animator.SetFloat(ANIM_MOVE_Y, dir.y);
-        _animator.SetFloat(ANIM_SPEED, isMoving ? (isSlide ? 0.5f : 1f) : 0f);
+        _animator.SetTrigger(animName);
     }
 
     public void PlayerHitEffect()

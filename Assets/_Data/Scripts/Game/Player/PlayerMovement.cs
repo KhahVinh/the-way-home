@@ -43,7 +43,6 @@ public class PlayerMovement : MyBehaviour
         _moveInput.x = Input.GetAxisRaw("Horizontal"); // A - D
         _moveInput.y = Input.GetAxisRaw("Vertical");   // S - W
         _moveInput = _moveInput.normalized;
-
     }
 
     private void FixedUpdate()

@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -121,7 +121,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Crush_Up-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 16
+        width: 19
+        height: 30
+      alignment: 9
+      pivot: {x: 0.3257372, y: 0.030099679}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c799ab9fa359bd64d9c033419830acd0
+      internalID: 566630414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush_Up-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 16
+        width: 19
+        height: 31
+      alignment: 9
+      pivot: {x: 0.30989516, y: 0.029128721}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f3f6cf28a228534eb6246e3a92fb0aa
+      internalID: -1109902529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush_Up-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 16
+        width: 19
+        height: 32
+      alignment: 9
+      pivot: {x: 0.29405293, y: 0.01881224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8985f385ec5be9b48b27e73d65907a47
+      internalID: 2002392024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush_Up-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 16
+        width: 15
+        height: 33
+      alignment: 9
+      pivot: {x: 0.37960002, y: 0.018242171}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0778dffc497a0bc48aed7178298ad58f
+      internalID: -2108515106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush_Up-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 16
+        width: 15
+        height: 31
+      alignment: 9
+      pivot: {x: 0.39966634, y: 0.019419085}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b774a5c08ee3bf949aedf048a9f15fb8
+      internalID: 422012608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush_Up-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 16
+        width: 15
+        height: 34
+      alignment: 9
+      pivot: {x: 0.37960002, y: 0.008852734}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6490d8f6a7513ff4094c1116ca4c2745
+      internalID: -1128625976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush_Up-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 16
+        width: 15
+        height: 37
+      alignment: 9
+      pivot: {x: 0.39966634, y: 0.032540295}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87b0a69b2bf357245a4ecb64b651f565
+      internalID: 387539632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush_Up-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 16
+        width: 15
+        height: 40
+      alignment: 9
+      pivot: {x: 0.43979898, y: 0.015049791}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82c03edda771e7f4aadfcc587ae57eed
+      internalID: -819202489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +300,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Crush_Up-Sheet_0: 566630414
+      Crush_Up-Sheet_1: -1109902529
+      Crush_Up-Sheet_2: 2002392024
+      Crush_Up-Sheet_3: -2108515106
+      Crush_Up-Sheet_4: 422012608
+      Crush_Up-Sheet_5: -1128625976
+      Crush_Up-Sheet_6: 387539632
+      Crush_Up-Sheet_7: -819202489
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

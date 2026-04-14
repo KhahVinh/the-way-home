@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -121,7 +121,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Crush_Side-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 16
+        width: 28
+        height: 29
+      alignment: 9
+      pivot: {x: 0.8439993, y: -0.00000023019724}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f056fe22cef4adc4890ed7a27f95ab05
+      internalID: -989106488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush_Side-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 16
+        width: 30
+        height: 30
+      alignment: 9
+      pivot: {x: 0.8411326, y: -0.010033544}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1a11eed8a3693f46893f63be74ed49a
+      internalID: 1151348055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush_Side-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 16
+        width: 33
+        height: 30
+      alignment: 9
+      pivot: {x: 0.84660524, y: -0.00000022252401}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99cce53280a1674b9e32e1d402cb1a1
+      internalID: 1611402174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush_Side-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 13
+        width: 30
+        height: 23
+      alignment: 9
+      pivot: {x: 0.14883372, y: 0.1439559}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ee158eebb62ae247b50838cb4742eb2
+      internalID: 721283651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush_Side-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 12
+        width: 30
+        height: 23
+      alignment: 9
+      pivot: {x: 0.11873373, y: 0.18321677}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f66d8359e64742140a9a27ceb1dcedda
+      internalID: 248338094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush_Side-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 13
+        width: 29
+        height: 25
+      alignment: 9
+      pivot: {x: 0.1471042, y: 0.14447945}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e0030bd3b0b5154692b59a361a4acf0
+      internalID: -2047240336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush_Side-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 16
+        width: 26
+        height: 25
+      alignment: 9
+      pivot: {x: 0.26846197, y: 0.012039718}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6e0c759d2c567a40a3561491d68c8fb
+      internalID: 1415415779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush_Side-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 16
+        width: 18
+        height: 28
+      alignment: 9
+      pivot: {x: 0.41638863, y: 0.021499703}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1348a6ce44b4e34418f00681ff17e95d
+      internalID: 1493071339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +300,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Crush_Side-Sheet_0: -989106488
+      Crush_Side-Sheet_1: 1151348055
+      Crush_Side-Sheet_2: 1611402174
+      Crush_Side-Sheet_3: 721283651
+      Crush_Side-Sheet_4: 248338094
+      Crush_Side-Sheet_5: -2047240336
+      Crush_Side-Sheet_6: 1415415779
+      Crush_Side-Sheet_7: 1493071339
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

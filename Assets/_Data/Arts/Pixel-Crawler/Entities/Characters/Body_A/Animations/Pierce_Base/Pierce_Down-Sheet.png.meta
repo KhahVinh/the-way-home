@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -121,7 +121,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Pierce_Down-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 16
+        width: 18
+        height: 29
+      alignment: 9
+      pivot: {x: 0.6672219, y: 0.062275525}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 662168328abd3fd4f998eb910d0e3bfd
+      internalID: 203169869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pierce_Down-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 16
+        width: 18
+        height: 29
+      alignment: 9
+      pivot: {x: 0.6337772, y: 0.07265479}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cab038dac923030439778c65c58bef5a
+      internalID: 1705230923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pierce_Down-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 16
+        width: 18
+        height: 29
+      alignment: 9
+      pivot: {x: 0.6504991, y: 0.08303405}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae3f340c06eade340b223c0f71a887cc
+      internalID: 506314037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pierce_Down-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 0
+        width: 16
+        height: 40
+      alignment: 9
+      pivot: {x: 0.48118687, y: 0.39882404}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d442e04dcacdc84c8a380abe7d9576c
+      internalID: 144929810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pierce_Down-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 3
+        width: 17
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5885279, y: 0.33187097}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b8795b412fa53e4a8e406ab69e0c6c3
+      internalID: -76077357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pierce_Down-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 7
+        width: 18
+        height: 36
+      alignment: 9
+      pivot: {x: 0.60033333, y: 0.25083268}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 400e3af38d78fb0448d7f5b75124dc33
+      internalID: 652769037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pierce_Down-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 13
+        width: 19
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5475255, y: 0.11651568}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a73478054345a02448d7eed6f9434090
+      internalID: 922851805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pierce_Down-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 15
+        width: 18
+        height: 29
+      alignment: 9
+      pivot: {x: 0.61705524, y: 0.08303405}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c1699288a28bc48a85c7ba794e0585
+      internalID: 1615875753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +300,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Pierce_Down-Sheet_0: 203169869
+      Pierce_Down-Sheet_1: 1705230923
+      Pierce_Down-Sheet_2: 506314037
+      Pierce_Down-Sheet_3: 144929810
+      Pierce_Down-Sheet_4: -76077357
+      Pierce_Down-Sheet_5: 652769037
+      Pierce_Down-Sheet_6: 922851805
+      Pierce_Down-Sheet_7: 1615875753
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

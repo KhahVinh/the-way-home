@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -121,7 +121,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Pierce_Side-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 16
+        width: 21
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da92d2379d777354584de17ad51890d5
+      internalID: -752247284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pierce_Side-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 16
+        width: 23
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbffc877569f8864a86d71ef9589c190
+      internalID: -1376336483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pierce_Side-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 16
+        width: 24
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d5c3850a701df4b8cd0b0ab56ffbf0
+      internalID: -471492001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pierce_Side-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 16
+        width: 40
+        height: 26
+      alignment: 9
+      pivot: {x: 0.048500825, y: 0.0115766525}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d663a1d1bd3627643b42fda8c081df24
+      internalID: -697743415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pierce_Side-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 16
+        width: 36
+        height: 26
+      alignment: 9
+      pivot: {x: 0.056861877, y: 0.034730397}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efa738a91f6bc6b4b864ae7fdb4afbc2
+      internalID: -1238821091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pierce_Side-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 16
+        width: 31
+        height: 27
+      alignment: 9
+      pivot: {x: 0.08248409, y: 0.011147887}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b8681ba13de9444e8179dbd85d5edd3
+      internalID: 99430833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pierce_Side-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 16
+        width: 24
+        height: 29
+      alignment: 9
+      pivot: {x: 0.086125694, y: 0.020758333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d40b7fc510378c4c95c8c4b1580af81
+      internalID: -1396726592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pierce_Side-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 16
+        width: 20
+        height: 29
+      alignment: 9
+      pivot: {x: 0.379599, y: -0.00000023019724}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b2a4ec4c2424af439dbe8d022b2bc15
+      internalID: 138861406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +300,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Pierce_Side-Sheet_0: -752247284
+      Pierce_Side-Sheet_1: -1376336483
+      Pierce_Side-Sheet_2: -471492001
+      Pierce_Side-Sheet_3: -697743415
+      Pierce_Side-Sheet_4: -1238821091
+      Pierce_Side-Sheet_5: 99430833
+      Pierce_Side-Sheet_6: -1396726592
+      Pierce_Side-Sheet_7: 138861406
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

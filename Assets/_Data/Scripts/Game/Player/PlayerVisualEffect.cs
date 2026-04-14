@@ -55,6 +55,11 @@ public class PlayerVisualEffect : MyBehaviour
         _animator.SetFloat(ANIM_MOVE_Y, dir.y);
         _animator.SetFloat(ANIM_SPEED, isMoving ? (isSlide ? 0.5f : 1f) : 0f);
     }
+
+    public void PlayerHitEffect()
+    {
+        _animator.SetTrigger("Hit");
+    }
     #endregion
 }
 

@@ -8,5 +8,4 @@ public class CharacterHealthSO : ScriptableObject
 {
     [field: SerializeField]
     public int MaxHealth { get; private set; }
-    public int CurrentHealth { get; set; }
 }

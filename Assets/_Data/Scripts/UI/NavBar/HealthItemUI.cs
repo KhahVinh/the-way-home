@@ -6,7 +6,7 @@ public class HealthItemUI : MonoBehaviour
     [SerializeField]
     private Image _imgHealth;
     [SerializeField]
-    private CharacterHealthSO _healthData;
+    private HealthSystem _healthData;
 
     private void Start()
     {
@@ -20,7 +20,7 @@ public class HealthItemUI : MonoBehaviour
             Debug.LogWarning("HealthSystem data is not assigned in HealthItemUI.");
             return;
         }
-        float healthPercentage = (float)_healthData.CurrentHealth / _healthData.MaxHealth;
+        float healthPercentage = (float)_healthData.CurrentHealth / _healthData.CharacterHealthData.MaxHealth;
         _imgHealth.fillAmount = healthPercentage;
     }
 

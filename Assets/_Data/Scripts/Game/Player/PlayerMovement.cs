@@ -14,6 +14,9 @@ public class PlayerMovement : MyBehaviour
     [Header("Components")]
     [SerializeField]
     private PlayerVisualEffect _playerVisualEffect;
+    [SerializeField]
+    private Transform _attackPoint;
+
     private Vector2 _lastMoveDir;
 
     public Vector2 LastMoveDir => _lastMoveDir;
@@ -55,6 +58,7 @@ public class PlayerMovement : MyBehaviour
         {
             _lastMoveDir = _moveInput;
         }
+        _attackPoint.localPosition = _lastMoveDir.normalized * 1f; // Cập nhật vị trí của điểm tấn công theo hướng di chuyển cuối cùng
         _playerVisualEffect.UpdateAnim(_lastMoveDir, isMoving);
     }
 }

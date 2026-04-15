@@ -4,10 +4,15 @@ using UnityEngine;
 public class HealthSystem : MonoBehaviour, IHealth
 {
     [SerializeField]
-    private CharacterHealthSO _characterHealthData;
+    protected CharacterHealthSO _characterHealthData;
+    [SerializeField]
+    protected int _currentHealth;
     protected Action _onHealthChange;
     [SerializeField]
     protected HealthItemUI _healthItemUI;
+
+    public int CurrentHealth { get { return _currentHealth; } }
+    public CharacterHealthSO CharacterHealthData { get { return _characterHealthData; } }
 
     protected virtual void Start()
     {
@@ -15,13 +20,12 @@ public class HealthSystem : MonoBehaviour, IHealth
     }
     public void InitHeal()
     {
-        _characterHealthData.CurrentHealth = _characterHealthData.MaxHealth;
+        _currentHealth = _characterHealthData.MaxHealth;
         this.RegisterEventOnHealthChange();
     }
-
     public virtual void TakeDamage(float damage)
     {
-        _characterHealthData.CurrentHealth = Mathf.Clamp(_characterHealthData.CurrentHealth - (int)damage, 0, _characterHealthData.MaxHealth);
+        _currentHealth = Mathf.Clamp(_currentHealth - (int)damage, 0, _characterHealthData.MaxHealth);
     }
 
     /// <summary>
@@ -29,6 +33,7 @@ public class HealthSystem : MonoBehaviour, IHealth
     /// </summary>
     protected virtual void RegisterEventOnHealthChange()
     {
-        _onHealthChange += _healthItemUI.HandleHealthChange;
+        if (_healthItemUI != null)
+            _onHealthChange += _healthItemUI.HandleHealthChange;
     }
 }

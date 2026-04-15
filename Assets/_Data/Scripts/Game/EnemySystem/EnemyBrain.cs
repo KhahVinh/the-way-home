@@ -63,6 +63,11 @@ public class EnemyBrain : MonoBehaviour
         anim.SetMoving(false);
     }
 
+    public void Hurt()
+    {
+        anim.PlayHurt();
+    }
+
     public void Die()
     {
         isDead = true;

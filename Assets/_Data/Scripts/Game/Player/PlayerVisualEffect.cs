@@ -49,7 +49,7 @@ public class PlayerVisualEffect : MyBehaviour
         _animator.SetFloat(ANIM_SPEED, isMoving ? 1f : 0f);
     }
 
-    public void UpdateAnimViaName(string animName, Vector2 dir)
+    public void UpdateAnimTriggerViaName(string animName, Vector2 dir)
     {
         _animator.SetFloat(ANIM_MOVE_X, dir.x);
         _animator.SetFloat(ANIM_MOVE_Y, dir.y);

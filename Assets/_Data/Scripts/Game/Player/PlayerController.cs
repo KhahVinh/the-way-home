@@ -7,12 +7,15 @@ public class PlayerController : MyBehaviour
     [SerializeField]
     private PlayerChop _playerChop;
     [SerializeField]
+    private PlayerAttack _playerAttack;
+    [SerializeField]
     private AgentWeapon _agentWeapon;
     [SerializeField]
     private PlayerVisualEffect _playerVisualEffect;
 
     [SerializeField]
     private PlayerMovement _playerMovement;
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Q))
@@ -39,21 +42,30 @@ public class PlayerController : MyBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Space) && _agentWeapon.Weapon != null)
         {
-            HandleKeySpace();
-            _playerChop.Chop();
+            if (!_agentWeapon.Weapon.Name.Equals("Sword"))
+            {
+                _playerChop.Chop();
+                HandleKeySpace();
+            }
+            else
+                HandleKeySpace();
+            _playerAttack.TryAttack();
         }
     }
 
+    /// <summary>
+    /// Handle animation
+    /// </summary>
     private void HandleKeySpace()
     {
         if (_agentWeapon.Weapon.Name.Equals("Axe"))
         {
-            _playerVisualEffect.UpdateAnimViaName("Chop", _playerMovement.LastMoveDir);
+            _playerVisualEffect.UpdateAnimTriggerViaName("Chop", _playerMovement.LastMoveDir);
             return;
         }
         if (_agentWeapon.Weapon.Name.Equals("Pickaxe"))
         {
-            _playerVisualEffect.UpdateAnimViaName("Mine", _playerMovement.LastMoveDir);
+            _playerVisualEffect.UpdateAnimTriggerViaName("Mine", _playerMovement.LastMoveDir);
             return;
         }
     }

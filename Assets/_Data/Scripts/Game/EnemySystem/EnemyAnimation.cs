@@ -29,4 +29,8 @@ public class EnemyAnimation : MonoBehaviour
     {
         anim.SetBool("IsDead", true);
     }
+    public void PlayHurt()
+    {
+        anim.SetTrigger("Hurt");
+    }
 }

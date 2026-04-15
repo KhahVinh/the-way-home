@@ -1,10 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyHealth : HealthSystem
 {
     private EnemyBrain _brain;
+
+    public GameObject _prefabItemDrop;
 
     void Awake()
     {
@@ -25,6 +25,7 @@ public class EnemyHealth : HealthSystem
     void Die()
     {
         _brain.Die();
+        Instantiate(_prefabItemDrop, transform.position, Quaternion.identity); // Drop item
         Destroy(gameObject, 2f); // delay cho animation chết
     }
 }

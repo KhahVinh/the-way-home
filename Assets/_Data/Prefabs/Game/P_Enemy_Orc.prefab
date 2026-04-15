@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 5680305434918363420}
   - component: {fileID: 34378336522815718}
   - component: {fileID: 6173742080986176862}
+  - component: {fileID: 4746715448931135790}
   m_Layer: 7
   m_Name: P_Enemy_Orc
   m_TagString: Untagged
@@ -177,7 +178,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 258561698574840885}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -272,6 +273,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0621233, y: 0.48385525}
   m_EdgeRadius: 0
+--- !u!114 &4746715448931135790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258561698574840885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6bd1f50ed6580a4d86c436efb41feed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7915000566296625123
 GameObject:
   m_ObjectHideFlags: 0

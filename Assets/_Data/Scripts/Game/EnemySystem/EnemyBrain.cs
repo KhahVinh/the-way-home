@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyBrain : MonoBehaviour
@@ -22,6 +20,7 @@ public class EnemyBrain : MonoBehaviour
         combat = GetComponent<EnemyCombat>();
         anim = GetComponent<EnemyAnimation>();
         patrol = GetComponent<EnemyPatrol>();
+        player = GameObject.Find("P_Player").transform;
     }
 
     void Update()

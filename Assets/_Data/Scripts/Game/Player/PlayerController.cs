@@ -48,8 +48,7 @@ public class PlayerController : MyBehaviour
                 HandleKeySpace();
             }
             else
-                HandleKeySpace();
-            _playerAttack.TryAttack();
+                _playerAttack.TryAttack();
         }
     }
 

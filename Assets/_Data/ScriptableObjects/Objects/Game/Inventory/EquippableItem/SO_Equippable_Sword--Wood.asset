@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <IsStackable>k__BackingField: 0
   <MaxStackSize>k__BackingField: 1
-  <Name>k__BackingField: Sword Wood
+  <Name>k__BackingField: Sword
   <Description>k__BackingField: Have damage
   <ItemImage>k__BackingField: {fileID: -511474396, guid: ced7d766007e2a24698e481d09ffd6ba, type: 3}
   <DefaultParametersList>k__BackingField:

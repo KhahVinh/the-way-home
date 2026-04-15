@@ -24,6 +24,7 @@ public class EnemyHealth : HealthSystem
 
     void Die()
     {
+        GetComponent<EnemyRespawn>()?.NotifyDeath();
         _brain.Die();
         Instantiate(_prefabItemDrop, transform.position, Quaternion.identity); // Drop item
         Destroy(gameObject, 2f); // delay cho animation chết

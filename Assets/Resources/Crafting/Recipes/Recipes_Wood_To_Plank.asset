@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3595c48f63118d40a82191e6d573ac8, type: 3}
+  m_Name: Recipes_Wood_To_Plank
+  m_EditorClassIdentifier: 
+  recipeName: Sword wood
+  recipeDescription: Cut wood into wooden planks
+  ingredients:
+  - item: {fileID: 11400000, guid: d33cbe3d1d9737e4f8fbcc7598f82f85, type: 2}
+    quantity: 1
+  outputs:
+  - item: {fileID: 11400000, guid: 07baf21a6b7738941987ba574199b5a5, type: 2}
+    quantity: 2
+  craftingTime: 1.5
+  recipeIcon: {fileID: 977310137, guid: ced7d766007e2a24698e481d09ffd6ba, type: 3}

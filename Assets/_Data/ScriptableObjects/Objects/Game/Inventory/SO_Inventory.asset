@@ -26,12 +26,16 @@ MonoBehaviour:
       value: 5
   - quantity: 1
     item: {fileID: 11400000, guid: 8fe694da0b3817948b6f9cac8dfedc00, type: 2}
-    itemState: []
+    itemState:
+    - itemParameter: {fileID: 11400000, guid: 311b21f0b58657343a849a7987896e83, type: 2}
+      value: 5
   - quantity: 1
     item: {fileID: 11400000, guid: 45f063b7a80449b44b1ff403c857d94a, type: 2}
-    itemState: []
-  - quantity: 0
-    item: {fileID: 0}
+    itemState:
+    - itemParameter: {fileID: 11400000, guid: 311b21f0b58657343a849a7987896e83, type: 2}
+      value: 5
+  - quantity: 20
+    item: {fileID: 11400000, guid: d33cbe3d1d9737e4f8fbcc7598f82f85, type: 2}
     itemState: []
   - quantity: 0
     item: {fileID: 0}

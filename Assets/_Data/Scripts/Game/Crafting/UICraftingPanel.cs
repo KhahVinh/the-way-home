@@ -121,18 +121,18 @@ namespace Crafting.UI
             {
                 var buttonGO = Instantiate(recipeButtonPrefab, recipeListContainer);
                 var button = buttonGO.GetComponent<Button>();
-                var image = buttonGO.GetComponent<Image>();
-                var textComponent = buttonGO.GetComponentInChildren<TextMeshProUGUI>();
+                var image = buttonGO.transform.GetChild(0).GetComponent<Image>();
+                // var textComponent = buttonGO.GetComponentInChildren<TextMeshProUGUI>();
 
                 if (image && recipe.RecipeIcon)
                 {
                     image.sprite = recipe.RecipeIcon;
                 }
 
-                if (textComponent)
+                /* if (textComponent)
                 {
                     textComponent.text = recipe.RecipeName;
-                }
+                } */
 
                 // Check if recipe can be crafted
                 bool canCraft = recipe.CanCraft(craftingSystem.GetCurrentInventoryState());
@@ -214,11 +214,11 @@ namespace Crafting.UI
                 {
                     var ingredientGO = Instantiate(ingredientPrefab, ingredientsContainer);
                     var text = ingredientGO.GetComponentInChildren<TextMeshProUGUI>();
-                    var image = ingredientGO.GetComponentInChildren<Image>();
+                    var image = ingredientGO.transform.GetChild(1).GetComponent<Image>();
 
                     if (text)
                     {
-                        text.text = $"{ingredient.Item.Name} x{ingredient.Quantity}";
+                        text.text = $"{ingredient.Quantity}";
                     }
 
                     if (image && ingredient.Item.ItemImage)
@@ -240,11 +240,11 @@ namespace Crafting.UI
                 {
                     var outputGO = Instantiate(outputPrefab, outputsContainer);
                     var text = outputGO.GetComponentInChildren<TextMeshProUGUI>();
-                    var image = outputGO.GetComponentInChildren<Image>();
+                    var image = outputGO.transform.GetChild(0).transform.GetChild(0).GetComponent<Image>();
 
                     if (text)
                     {
-                        text.text = $"{output.Item.Name} x{output.Quantity}";
+                        text.text = $"x{output.Quantity}";
                     }
 
                     if (image && output.Item.ItemImage)
